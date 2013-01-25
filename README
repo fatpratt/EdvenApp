@@ -1,0 +1,33 @@
+This repo contains two separate projects in one: the EdVentureMaze Android App and the 
+EdVentureMaze Applet.  Since most of the code can be shared between the two platforms, the 
+code base is consolidated into this one repository.
+
+Code common to both projects resides in the following packages:
+	com.edventuremaze.maze
+	com.edventuremaze.utils
+	
+Platform specific code should never go into the above directories.  Platform specific code 
+should be abstracted out using the factory pattern repeated numerous times in this code
+base.  Keeping the maze code clean and consolidated will be critical in maintaining code in
+the future.
+	
+Code specific to the Java Applet resides in the following package:
+	com.edventuremaze.applet
+
+Code specific to the Android App resides in the following files, packages and folders: 
+	com.edventuremaze.and
+	res
+	AndroidManifest.xml
+	
+It might be handy to have two separate IDE projects for each of the overlapping code bases: one 
+for the Android App and one for the Java Applet.  When switching between the two projects, you might 
+have to make adjustments to each file in the following package.
+
+	com.edventuremaze.factories
+	
+Perhaps in the future another platform will make use of the common routines here.  For example,
+perhaps a GWT version of this code will produce a build suitable for running HTML 5 canvas 
+version of EdVentureMaze.
+
+	
+	
