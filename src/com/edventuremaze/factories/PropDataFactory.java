@@ -20,7 +20,7 @@ public class PropDataFactory {
      */
     public static PropData createPropData(Platform platform, String folder, int mapHeight, int mapWidth, int mapWidthShift, String wallFileName) {
 //        if (platform instanceof PlatformAnd) {
-//            return new PlatformAnd((PlatformApplet)platform, folder, mapHeight, mapWidth, mapWidthShift, wallFileName);
+//            return new PlatformAnd((PlatformAnd)platform, folder, mapHeight, mapWidth, mapWidthShift, wallFileName);
 //        }
 
         if (platform instanceof PlatformApplet) {
