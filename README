@@ -23,12 +23,11 @@ folders:
 It might be handy to have two separate IDE projects for each of the overlapping 
 code bases: one for the Android App and one for the Java Applet.  When switching
 between the two projects, you might have to make adjustments to each file in the 
-following package.
-
+following package:
 	com.edventuremaze.factories
 	
 Perhaps in the future another platform will make use of the common routines here. 
-For example,perhaps a GWT version of this code will produce a build suitable for 
+For example, perhaps a GWT version of this code will produce a build suitable for 
 running HTML 5 canvas version of EdVentureMaze.
 
 	
