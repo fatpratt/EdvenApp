@@ -23,8 +23,8 @@ public class QuestionPosDataFactory {
             return new QuestionPosDataApplet((PlatformApplet)platform, folder, mapHeight, mapWidth, mapWidthShift, wallFileName);
         }
 
-//        if (platform instanceof PlatformApplet) {
-//            return new QuestionPosDataApplet((PlatformApplet)platform, folder, mapHeight, mapWidth, mapWidthShift, wallFileName);
+//        if (platform instanceof PlatformAnd) {
+//            return new QuestionPosDataAnd((PlatformAnd)platform, folder, mapHeight, mapWidth, mapWidthShift, wallFileName);
 //        }
 
         // TODO: perhaps we will handle other platforms later...
