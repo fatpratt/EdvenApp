@@ -2,7 +2,8 @@ This repo contains two separate projects in one: the EdVentureMaze Android App a
 the EdVentureMaze Applet.  Since most of the code can be shared between the two 
 platforms, the code base is consolidated into this one repository.
 
-Code common to both projects resides in the following packages:
+Code common to both projects (aka "maze core" code) resides in the following 
+packages:
 	com.edventuremaze.maze
 	com.edventuremaze.utils
 	
