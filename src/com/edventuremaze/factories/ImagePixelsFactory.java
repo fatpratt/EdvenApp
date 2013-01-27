@@ -1,7 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.app.maze.PlatformApplet;
-//import com.edventuremaze.app.util.ImagePixelsApplet;
+//import com.edventuremaze.app.maze.PlatformAnd;
+//import com.edventuremaze.app.util.ImagePixelsAnd;
 import com.edventuremaze.applet.maze.PlatformApplet;
 import com.edventuremaze.applet.maze.ImagePixelsApplet;
 import com.edventuremaze.maze.ImagePixels;
@@ -43,8 +43,8 @@ public class ImagePixelsFactory {
             return new ImagePixelsApplet((PlatformApplet)platform);
         }
 
-//        if (platform instanceof PlatformApplet) {
-//            return new ImagePixelsApplet((PlatformApplet)platform);
+//        if (platform instanceof PlatformAnd) {
+//            return new ImagePixelsApplet((PlatformAnd)platform);
 //        }
 
         // TODO: perhaps we will handle other platforms later...
