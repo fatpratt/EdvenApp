@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">EdVenture Maze</string>
+    <string name="app_name">EdVenture Maze</string>
+    <string name="maze_host_url">http://www.EdVentureMaze.com/WebContent/</string>
+    <string name="maze_dir">MazeDir</string>
+    <string name="maze_dir_x2">MazeDirX2</string>
+</resources>

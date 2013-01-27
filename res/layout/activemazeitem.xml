@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.edventuremaze.and.ActiveMazeListItem
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:paddingTop="8sp"
+    android:paddingBottom="10sp"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+
+    <LinearLayout android:id="@+id/LinearLayout02"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvMazeName"
+                android:text=""
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/LinearLayout02"
+                    android:gravity="right"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+            <TextView android:id="@+id/tvAuthorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6sp"
+                android:gravity="right"
+                android:text="Author: "
+                android:textSize="13sp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6sp"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/tvAuthor"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.edventuremaze.and.ActiveMazeListItem>
+
+
+
