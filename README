@@ -13,22 +13,26 @@ will be critical for maintaining code in the future.
 	
 Code specific to the Java Applet resides in the following package:
 	com.edventuremaze.applet
+	com.edventuremaze.applet.maze
+	com.edventuremaze.applet.utils
 
 Code specific to the Android App resides in the following files, packages and 
 folders: 
 	com.edventuremaze.and
+	com.edventuremaze.and.maze
+	com.edventuremaze.and.utils
 	res
 	AndroidManifest.xml
 	
 It might be handy to have two separate IDE projects for each of the overlapping 
 code bases: one for the Android App and one for the Java Applet.  When switching
-between the two projects, you might have to make adjustments to each file in the 
-following package:
+between the two projects, you might have to make adjustments (comment out some
+code and comment in other code) to each file in the following package:
 	com.edventuremaze.factories
 	
-Perhaps in the future another platform will make use of the common routines here. 
-For example, perhaps a GWT version of this code will produce a build suitable for 
-running HTML 5 canvas version of EdVentureMaze.
+Perhaps in the future another platform will make use of the common routines here,  
+too.  For example, perhaps a GWT version of this code will produce a build suitable
+for running HTML 5 canvas version of EdVentureMaze.
 
 	
 	
