@@ -35,5 +35,7 @@ Perhaps in the future another platform will make use of the common routines here
 too.  For example, perhaps a GWT version of this code will produce a build suitable
 for running HTML 5 canvas version of EdVentureMaze.
 
+For more information on Ray Casting algorithms see the JavaRayCasting.doc in the 
+docs folder.
 	
 	
