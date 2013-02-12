@@ -16,6 +16,32 @@ import java.net.URL;
 
 /**
  * Main entry point for the java applet.
+ * 
+ * This applet may be launched from a web page using parameters as shown in the following example:
+ *  
+ *  <applet name='MAuthMazeX2' code='MainHere.class' archive='MAuthX2.jar'
+ * 		codebase='http://localhost:7770/WebContent/MazeDirX2/' 
+ * 		cache_archive='MAuthX2.jar' width=960 height=400>
+ * 	<param name="cache_archive" 	value="MAuthX2.jar">
+ * 	<param name="id"				value='8xee74gw2a'>
+ * 	<param name='primaryDir'		value='8xee74gw2a'>
+ * 	<param name='viewSize'			value='X2'>
+ * 	<param name="fgTextBoxClr"      value='#191919'>						
+ * 	<param name="bgTextBoxClr"      value='#eeeeee'>						
+ * 	<param name="bgGraphicBoxClr"   value='#fcfcfc'>						
+ * </applet>
+ * 
+ *
+ * To run in a much smaller applet box, use the following parameters:
+ *
+ *  <applet name='MAuthMazeX2' code='MainHere.class' 
+ *          codebase='http://localhost:7770/WebContent/MazeDir/' 
+ *          archive='MAuthX2.jar' width=640 height=200 align=top>
+ *      <param name="id"           VALUE='8xee74gw2a'>
+ *      <param name='primaryDir'   VALUE='8xee74gw2a'>
+ *      <param name='viewSize'     VALUE='X1'>
+ *  </applet>
+ *  
  * @author: brianpratt
  */
 public class MainHere extends JApplet implements Runnable, KeyListener, MazeListener {
