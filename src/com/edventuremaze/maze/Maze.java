@@ -137,7 +137,11 @@ public class Maze {
 	/**
 	 * Casts one ray of specified angle looking at all possible intersections with grid lines (in the
 	 * aerial view sense) to find and return the closest horizontal wall hit.
+<<<<<<< HEAD
 	 * See associated document (JavaRayCasting.doc) which describes steps one through four in great detail.
+=======
+	 * (See associated document which describes steps one through four in great detail.)
+>>>>>>> 213c4e638effcd620abf520ba3eeb4bc613d04aa
 	 */
 	private HorizWallHitItem castRayForHorizHit(int castArc, int playerX, int playerY, int playerArc) {
 		float distToNextXIntersection;
