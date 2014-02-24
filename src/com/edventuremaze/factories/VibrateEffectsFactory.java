@@ -1,9 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.and.maze.PlatformAnd;
-//import com.edventuremaze.and.maze.VibrateEffectsAnd;
-import com.edventuremaze.applet.maze.PlatformApplet;
-import com.edventuremaze.applet.maze.VibrateEffectsApplet;
+import com.edventuremaze.and.maze.PlatformAnd;
+import com.edventuremaze.and.maze.VibrateEffectsAnd;
 import com.edventuremaze.maze.Platform;
 import com.edventuremaze.maze.VibrateEffects;
 
@@ -19,13 +17,13 @@ public class VibrateEffectsFactory {
      * VibrateEffects object of the specified platform.
      */
     public static VibrateEffects createVibrateEffects(Platform platform) {
-//        if (platform instanceof PlatformAnd) {
-//            return new VibrateEffectsAnd((PlatformAnd)platform);
-//        }
-
-        if (platform instanceof PlatformApplet) {
-            return new VibrateEffectsApplet((PlatformApplet)platform);
+        if (platform instanceof PlatformAnd) {
+            return new VibrateEffectsAnd((PlatformAnd)platform);
         }
+
+//        if (platform instanceof PlatformApplet) {
+//            return new VibrateEffectsApplet((PlatformApplet)platform);
+//        }
 
         // TODO: perhaps we will handle other platforms later...
 

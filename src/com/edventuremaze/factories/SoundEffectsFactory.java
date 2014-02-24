@@ -1,9 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.and.maze.PlatformAnd;
-//import com.edventuremaze.and.maze.SoundEffectsAnd;
-import com.edventuremaze.applet.maze.PlatformApplet;
-import com.edventuremaze.applet.maze.SoundEffectsApplet;
+import com.edventuremaze.and.maze.PlatformAnd;
+import com.edventuremaze.and.maze.SoundEffectsAnd;
 import com.edventuremaze.maze.Platform;
 import com.edventuremaze.maze.SoundEffects;
 
@@ -19,13 +17,13 @@ public class SoundEffectsFactory {
      * SoundEffects object of the specified platform.
      */
     public static SoundEffects createSoundEffects(Platform platform, String folder) {
-//        if (platform instanceof PlatformAnd) {
-//            return new SoundEffectsAnd((PlatformAnd)platform, folder);
-//        }
-
-        if (platform instanceof PlatformApplet) {
-            return new SoundEffectsApplet((PlatformApplet)platform, folder);
+        if (platform instanceof PlatformAnd) {
+            return new SoundEffectsAnd((PlatformAnd)platform, folder);
         }
+
+//        if (platform instanceof PlatformApplet) {
+//            return new SoundEffectsApplet((PlatformApplet)platform, folder);
+//        }
 
         // TODO: perhaps we will handle other platforms later...
 

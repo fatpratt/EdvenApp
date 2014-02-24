@@ -1,9 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.and.maze.PlatformAnd;
-//import com.edventuremaze.and.utils.IniFileAnd;
-import com.edventuremaze.applet.maze.PlatformApplet;
-import com.edventuremaze.applet.utils.IniFileApplet;
+import com.edventuremaze.and.maze.PlatformAnd;
+import com.edventuremaze.and.utils.IniFileAnd;
 import com.edventuremaze.maze.Platform;
 import com.edventuremaze.utils.IniFile;
 
@@ -19,13 +17,13 @@ public class IniFileFactory {
      * ini file object of the specified platform.
      */
     public static IniFile createIniFileObj(Platform platform, String folder, String iniFileName) {
-//        if (platform instanceof PlatformAnd) {
-//            return new IniFileAnd((PlatformAnd)platform, folder, iniFileName);
-//        }
-
-        if (platform instanceof PlatformApplet) {
-            return new IniFileApplet((PlatformApplet)platform, folder, iniFileName);
+        if (platform instanceof PlatformAnd) {
+            return new IniFileAnd((PlatformAnd)platform, folder, iniFileName);
         }
+
+//        if (platform instanceof PlatformApplet) {
+//            return new IniFileApplet((PlatformApplet)platform, folder, iniFileName);
+//        }
 
         // TODO: perhaps we will handle other platforms later...
 //        if (platform instanceof PlatformGWT) {

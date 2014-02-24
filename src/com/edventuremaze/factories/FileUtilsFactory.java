@@ -1,9 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.and.maze.PlatformAnd;
-//import com.edventuremaze.and.utils.FileUtilsAnd;
-import com.edventuremaze.applet.maze.PlatformApplet;
-import com.edventuremaze.applet.utils.FileUtilsApplet;
+import com.edventuremaze.and.maze.PlatformAnd;
+import com.edventuremaze.and.utils.FileUtilsAnd;
 import com.edventuremaze.maze.Platform;
 import com.edventuremaze.utils.FileUtils;
 
@@ -19,13 +17,13 @@ public class FileUtilsFactory {
      * FileUtils object of the specified platform.
      */
     public static FileUtils createFileUtils(Platform platform) {
-//        if (platform instanceof PlatformAnd) {
-//            return new FileUtilsAnd(platform);
-//        }
-
-        if (platform instanceof PlatformApplet) {
-            return new FileUtilsApplet((PlatformApplet)platform);
+        if (platform instanceof PlatformAnd) {
+            return new FileUtilsAnd(platform);
         }
+
+//        if (platform instanceof PlatformApplet) {
+//            return new FileUtilsApplet((PlatformApplet)platform);
+//        }
 
 // TODO: perhaps we will handle other platforms later...
 //        if (platform instanceof PlatformGWT) {

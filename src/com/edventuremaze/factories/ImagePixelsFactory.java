@@ -1,9 +1,7 @@
 package com.edventuremaze.factories;
 
-//import com.edventuremaze.app.maze.PlatformAnd;
-//import com.edventuremaze.app.util.ImagePixelsAnd;
-import com.edventuremaze.applet.maze.PlatformApplet;
-import com.edventuremaze.applet.maze.ImagePixelsApplet;
+import com.edventuremaze.and.maze.PlatformAnd;
+import com.edventuremaze.and.maze.ImagePixelsAnd;
 import com.edventuremaze.maze.ImagePixels;
 import com.edventuremaze.maze.Platform;
 
@@ -19,13 +17,13 @@ public class ImagePixelsFactory {
      * image pixel object of the specified platform.
      */
     public static ImagePixels createImagePixels(Platform platform, String folder, String fileName) {
-//        if (platform instanceof PlatformAnd) {
-//            return new ImagePixelsAnd((PlatformAnd)platform, folder, fileName);
-//        }
-
-        if (platform instanceof PlatformApplet) {
-            return new ImagePixelsApplet((PlatformApplet)platform, folder, fileName);
+        if (platform instanceof PlatformAnd) {
+            return new ImagePixelsAnd((PlatformAnd)platform, folder, fileName);
         }
+
+//        if (platform instanceof PlatformApplet) {
+//            return new PlatformApplet((PlatformApplet)platform, folder, fileName);
+//        }
 
           // TODO: perhaps we will handle other platforms later...
 //        if (platform instanceof PlatformGWT) {
@@ -39,12 +37,12 @@ public class ImagePixelsFactory {
      * image pixel object of the specified platform.
      */
     public static ImagePixels createBlankImagePixels(Platform platform) {
-        if (platform instanceof PlatformApplet) {
-            return new ImagePixelsApplet((PlatformApplet)platform);
+        if (platform instanceof PlatformAnd) {
+            return new ImagePixelsAnd((PlatformAnd)platform);
         }
 
-//        if (platform instanceof PlatformAnd) {
-//            return new ImagePixelsApplet((PlatformAnd)platform);
+//        if (platform instanceof PlatformApplet) {
+//            return new ImagePixelsApplet((PlatformApplet)platform);
 //        }
 
         // TODO: perhaps we will handle other platforms later...
